@@ -1,0 +1,28 @@
+---
+const links = [ "Home", "About", "Gallery", "Contact" ]; 
+---
+
+<!-- <nav>
+    <a href="/">Home</a> | <a href="/about/">About</a> | <a href="/gallery/">Gallery</a>
+</nav> -->
+
+<nav>
+    <ul>
+        {links.map(  (links) => <li> {links} </li>)   }
+    </ul>
+</nav>
+<style>
+    ul
+    {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background-color: red;
+    }
+    li
+    {
+        padding: .5rem;
+        background-color: pink;
+    }
+</style>

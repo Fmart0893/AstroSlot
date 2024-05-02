@@ -1,16 +1,11 @@
----
+--- 
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+let title = "Home";
 ---
+<BaseLayout title = {title}>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+	<p>
+		Home - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat vitae, et nesciunt mollitia laboriosam cumque, quo harum praesentium voluptatum recusandae nam cum perferendis quia, excepturi illo eaque veniam labore in.
+	</p>
+</BaseLayout>
